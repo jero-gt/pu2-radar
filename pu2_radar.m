@@ -13,8 +13,8 @@ x = cajon((t-(tau/2))/tau);
 
 plotCompleto([R(1) R(end) -0.5 1.5], 'R [m]' , '', 'Señal recibida y[n]', 20, 'r-',2,R,y );
 plotCompleto([t(1) t(end) -0.5 1.5], 't [ms]' , '', 'Cajón', 20, 'r',2,t,x);
-plotHold([R(1) R(end) -0.5 1.5], 'R [m]' , '', 'Señal recibida y[n]', 20, 'r', 'b', 2, R, y, x,'Recibida', 'Entregada');
+plotHold([R(1) R(end) -0.5 1.5], 'R [m]' , '', 'Señal recibida y[n]', 20, 'r', 'b', 2, R, y, x,'Recibida', 'Transmitida');
 
 %%
 z= y+randn(size(y));
-plotHold([R(1) R(end) -5 5], 'R [m]' , '', 'Señal recibida y[n]', 20, 'r', 'b', 2, R, z, x,'Rec. contamindada', 'Entregada');
+plotHold([R(1) R(end) -5 5], 'R [m]' , '', 'Señal recibida y[n]', 20, 'r', 'b', 2, R, z, x,'Rec. contamindada', 'Transmitida');
