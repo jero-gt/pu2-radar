@@ -10,7 +10,7 @@ function stemDoble(lim_ejes1,lim_ejes2, eje_x, eje_y, titulo1, titulo2, tam_letr
 
     subplot(2,1,1);
     stem(n1, x1, col, 'Linewidth', grosor);
-    axis(lim_ejes1); grid on; % L ??mites de los ejes. Grilla.
+    axis(lim_ejes1); grid off; % L ??mites de los ejes. Grilla.
     view(0, 90); % Sitúa la gráfica en el eje real
     xlabel(eje_x,'Interpreter','Latex'); % Nombro el eje x.
     ylabel(eje_y,'Interpreter','Latex'); % Nombro el eje x.
@@ -21,7 +21,7 @@ function stemDoble(lim_ejes1,lim_ejes2, eje_x, eje_y, titulo1, titulo2, tam_letr
     
     subplot(2,1,2);
     stem(n2, x2, col, 'Linewidth', grosor);
-    axis(lim_ejes2); grid on; % L ??mites de los ejes. Grilla.
+    axis(lim_ejes2); grid off; % L ??mites de los ejes. Grilla.
     view(0, 90); % Sitúa la gráfica en el eje real
     xlabel(eje_x,'Interpreter','Latex'); % Nombro el eje x.
     ylabel(eje_y,'Interpreter','Latex'); % Nombro el eje x.

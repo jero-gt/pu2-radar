@@ -44,22 +44,6 @@ Z3_cont = abs(correlfft(z3_cont,xm));
 plotCompleto([R(1) R(end) 0 0.7e3], 'R [m]' , '', '|Z_{cont}[m]|', 20, 'r-',2,R,Z3_cont );
 
 %% Espectro de las señales
-[X,f] = fft_kit(x,fs);
- XM = fft_kit(xm,fs);
-stemDoble([-fs/2 fs/2 0 1.3e3],[-fs/2 fs/2 0 200], 'f[Hz]','','|X[k]|','|XM[k]|',20, 'b.',0.5,f,abs(X),f,abs(XM));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fft_kit(x,fs);
+Xfft_kit(xm,fs);
 
