@@ -23,7 +23,7 @@ plotCompleto([R(1) R(end) 0 1.5e3], 'R [m]' , '', '|Z[m]|', 20, 'r-',2,R,Z1 );
 
 %% Segunda señal recibida
 z2= radarRx2;
-plotHold([R(1) R(end) -0.5 2.5], 'R [m]' , '', 'Señal recibida z_2[n]', 20, 'r', 'b', 2, R, z2, x,'Recibida', 'Transmitida');
+plotHold([R(1) R(end) -0.5 2.5], 'R [m]' , '', 'Señales', 20, 'r', 'b', 2, R, z2, x,'Recibida', 'Transmitida');
 Z2 = abs(correlfft(z2,x));
 plotCompleto([R(1) R(end) 0 2e3], 'R [m]' , '', '|Z_2[m]| ', 20, 'r-',2,R,Z2 );
 
