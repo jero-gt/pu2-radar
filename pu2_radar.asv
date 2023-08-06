@@ -19,13 +19,13 @@ z1_cont= z1+randn(size(z1));
 plotHold([R(1) R(end) -5 5], 'R [m]' , '', 'Señales', 20, 'r', 'b', 2, R, z1_cont, x,'Rec. contamindada', 'Transmitida');
 
 Z1 = abs(correlfft(z1_cont,x));
-plotCompleto([R(1) R(end) 0 1.5e3], 'R [m]' , '', 'Módulo de la correlación circular', 20, 'r',2,R,Z1 );
+plotCompleto([R(1) R(end) 0 1.5e3], 'R [m]' , '', '|Z[m]|', 20, 'r-',2,R,Z1 );
 
 %% Segunda señal recibida
 z2= radarRx2;
 plotHold([R(1) R(end) -0.5 2.5], 'R [m]' , '', 'Señales', 20, 'r', 'b', 2, R, z2, x,'Recibida', 'Transmitida');
 Z2 = abs(correlfft(z2,x));
-plotCompleto([R(1) R(end) 0 2e3], 'R [m]' , '', '|Z_2[m]| ', 20, 'r',2,R,Z2 );
+plotCompleto([R(1) R(end) 0 2e3], 'R [m]' , '', '|Z_2[m]| ', 20, 'r-',2,R,Z2 );
 
 
 %% Tercera señal recibida (transmision up-chirp)
